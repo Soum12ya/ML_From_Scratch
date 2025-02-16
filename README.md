@@ -14,13 +14,13 @@ These datasets are concatenated into a single DataFrame with columns X and Y (me
 
 ## Questions
 
-#### 1. Use linear regression to fit a straight line to the given database. Set your learning rate to 0.5. What are the cost function value and learning parameters values after convergence? Also, mention the convergence criteria you used.
+### 1. Use linear regression to fit a straight line to the given database. Set your learning rate to 0.5. What are the cost function value and learning parameters values after convergence? Also, mention the convergence criteria you used.
 #### ans : 
 After convergence the cost function value is 0.2781 and value of m is 0.6620 and b is 0.0000 (after 50 iteration)
 <img width="278" alt="cost" src="https://github.com/user-attachments/assets/ded174f8-5459-48ed-bcc3-c15f3867c64f" />
 The convergence criteria used in the code is the stabilization of the cost function.
 
-#### 2. The cost function that we are using in this assignment is different than the one we used in class. Can you think of the advantage of averaging the cost?
+### 2. The cost function that we are using in this assignment is different than the one we used in class. Can you think of the advantage of averaging the cost?
 #### ans : Advantages of Averaging the Cost Function -
 Averaging the cost function provides several benefits in linear regression:
 
@@ -44,14 +44,14 @@ Averaging the cost function provides several benefits in linear regression:
      Whether using batch gradient descent, stochastic gradient descent, or mini-batch gradient descent, averaging the cost function ensures consistent learning behavior 
      across different optimization techniques.
 
-#### 3. Plot cost function v/s iteration graph for the model in question 1 for first 50 iterations.
+### 3. Plot cost function v/s iteration graph for the model in question 1 for first 50 iterations.
 #### ans : ![cost_vs_iterations](https://github.com/user-attachments/assets/fbb78a09-0248-4ca2-bd86-49bf75be5990)
 
 
-#### 4. Plot the given dataset on a graph and also print the straight line you obtained in question 1 to show how it fits the data.
+### 4. Plot the given dataset on a graph and also print the straight line you obtained in question 1 to show how it fits the data.
 #### ans : ![Linear Regression Fit](https://github.com/user-attachments/assets/aaf48fba-396c-48b7-900c-22f645cea2af)
 
-#### 5. Test your regression model with the learning rates lr = 0.005, lr = 0.5, lr = 5. For each learning rate, plot a graph showing how the cost function changes for the first 50 iterations and write your observation.
+### 5. Test your regression model with the learning rates lr = 0.005, lr = 0.5, lr = 5. For each learning rate, plot a graph showing how the cost function changes for the first 50 iterations and write your observation.
 #### ans : 
 ![photo1](https://github.com/user-attachments/assets/9c7cbf71-da41-4837-8a5f-193ba4b8441e)![photo2](https://github.com/user-attachments/assets/cb083032-8878-4d91-908d-86b6468ad677)![photo3](https://github.com/user-attachments/assets/45b7ea01-44a9-4351-a86a-d36114e62193)
 
@@ -60,7 +60,7 @@ Averaging the cost function provides several benefits in linear regression:
    2. A learning rate of 0.005 is too small, leading to slow progress.
    3. A learning rate of 5 is too large, causing divergence.
 
-#### 6. Choose a suitable learning rate, then implement stochastic and min-batch gradient descent, plot the cost function against iteration, and observe how your cost function changes compared to batch gradient descent.
+### 6. Choose a suitable learning rate, then implement stochastic and min-batch gradient descent, plot the cost function against iteration, and observe how your cost function changes compared to batch gradient descent.
 #### ans :
 ![SDG (1)](https://github.com/user-attachments/assets/7877df28-2d50-41bb-a33f-bce0a2ad4553)
 ![cost_vs_iterations](https://github.com/user-attachments/assets/d8597241-ae87-4811-af32-23eaf92f541b)
