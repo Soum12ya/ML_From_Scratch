@@ -62,9 +62,7 @@ Averaging the cost function provides several benefits in linear regression:
 
 #### 5. Test your regression model with the learning rates lr = 0.005, lr = 0.5, lr = 5. For each learning rate, plot a graph showing how the cost function changes for the first 50 iterations and write your observation.
 #### ans : 
-![photo1](https://github.com/user-attachments/assets/9c7cbf71-da41-4837-8a5f-193ba4b8441e)
-![photo2](https://github.com/user-attachments/assets/cb083032-8878-4d91-908d-86b6468ad677)
-![photo3](https://github.com/user-attachments/assets/45b7ea01-44a9-4351-a86a-d36114e62193)
+![photo1](https://github.com/user-attachments/assets/9c7cbf71-da41-4837-8a5f-193ba4b8441e)![photo2](https://github.com/user-attachments/assets/cb083032-8878-4d91-908d-86b6468ad677)![photo3](https://github.com/user-attachments/assets/45b7ea01-44a9-4351-a86a-d36114e62193)
 
 #### Observations : 
    1. A learning rate of 0.5 is optimal for this dataset as it balances convergence speed and stability.
@@ -76,5 +74,6 @@ Averaging the cost function provides several benefits in linear regression:
 ![SDG (1)](https://github.com/user-attachments/assets/7877df28-2d50-41bb-a33f-bce0a2ad4553)
 ![cost_vs_iterations](https://github.com/user-attachments/assets/d8597241-ae87-4811-af32-23eaf92f541b)
 ![Mini-Batch GD](https://github.com/user-attachments/assets/7b581b91-507c-4b2f-bd75-970b45dd2647)
+
 Based on the three graphs the best optimization method for your model is **Stochastic Gradient Descent (SGD)**.
 In the , **Batch Gradient Descent** ,the cost function decreases smoothly over iterations. is stable but may be slow for large datasets. other side **Mini-Batch Gradient Descent (MBGD)** ,the cost function initially remains stable but later explodes, this indicates divergence, likely due to an inappropriate learning rate or batch size. But in **Stochastic Gradient Descent (SGD)** ,it consistently decreases the cost while maintaining efficiency. Despite the noise, SGD converges faster and generalizes better, avoiding getting stuck in local minima.
