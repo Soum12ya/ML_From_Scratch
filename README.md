@@ -34,23 +34,33 @@ The convergence criteria used in the code is the stabilization of the cost funct
 #### ans : Advantages of Averaging the Cost Function -
 Averaging the cost function provides several benefits in linear regression:
 
-    1. Stabilizes Gradient Updates :-
+1. Stabilizes Gradient Updates :-
      When using batch gradient descent, averaging the cost function ensures that each update step is more stable and not dominated by extreme values. This helps prevent 
      sudden fluctuations in parameter updates, leading to smoother convergence.
 
-    2. Better Convergence Behavior :-
+2. Better Convergence Behavior :-
      Without averaging, the cost function values could become excessively large, especially when the dataset is large. Averaging prevents large gradients, making the 
      optimization process more controlled and reducing the chances of divergence.
 
-    3. Ensures Scale Independence :-
+3. Ensures Scale Independence :-
      If we did not average, the cost function would scale with the dataset size. By averaging, we make the cost function independent of the number of data points, ensuring 
      that it remains comparable across datasets of different sizes.
 
-    4. Improves Numerical Stability :-
+4. Improves Numerical Stability :-
      When working with large datasets, summing the squared error terms directly can result in numerical instability. Averaging helps in keeping the computed values within a 
      reasonable range, reducing the risk of overflow or underflow.
 
-    5. Consistency Across Different Optimization Methods :-
+5. Consistency Across Different Optimization Methods :-
      Whether using batch gradient descent, stochastic gradient descent, or mini-batch gradient descent, averaging the cost function ensures consistent learning behavior 
      across different optimization techniques.
+
+#### 3. Plot cost function v/s iteration graph for the model in question 1 for first 50 iterations.
+#### ans : 
+![cost_vs_iterations](https://github.com/user-attachments/assets/fbb78a09-0248-4ca2-bd86-49bf75be5990)
+
+
+#### 4. Plot the given dataset on a graph and also print the straight line you obtained in question 1 to show how it fits the data.
+#### ans : 
+![Linear Regression Fit](https://github.com/user-attachments/assets/aaf48fba-396c-48b7-900c-22f645cea2af)
+
 
